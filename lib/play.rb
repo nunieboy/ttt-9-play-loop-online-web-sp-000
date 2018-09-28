@@ -37,9 +37,13 @@ end
 
 # Define your play method below
 def play(board)
-  i =0
+  i = 1
+  player = 1
   while i < 9
   turn(board)
   i +=1
+  if player % 2 == 0
+    current_player = "O"
+  end
 end
 end
